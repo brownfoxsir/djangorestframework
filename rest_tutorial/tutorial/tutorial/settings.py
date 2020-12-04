@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'snippets.apps.SnippetsConfig',
+
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +76,12 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 3
 }
+
+# REST_FRAMEWORK = {
+ 
+#     # 新版drf schema_class默认用的是rest_framework.schemas.openapi.AutoSchema
+
+# }
 WSGI_APPLICATION = 'tutorial.wsgi.application'
 
 
